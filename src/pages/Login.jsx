@@ -30,27 +30,25 @@ class Login extends Component {
         <label htmlFor="input-player-name">
           Nome:
           <input
-            onChange={this.handleChange}
+            onChange={ this.handleChange }
             data-testid="input-player-name"
             type="text"
             name="name"
-            value={name}
+            value={ name }
             id="input-player-name"
           />
         </label>
-        <br/>
         <label htmlFor="input-gravatar-email">
           Email:
           <input
-            onChange={this.handleChange}
+            onChange={ this.handleChange }
             data-testid="input-gravatar-email"
             type="email"
             name="email"
-            value={email}
+            value={ email }
             id="input-gravatar-email"
           />
         </label>
-        <br/>
         <Link to="/game">
           <button
             onClick={ () => {
@@ -62,7 +60,6 @@ class Login extends Component {
                   gravatarEmail: email,
                 },
               };
-
               localStorage.setItem('state', JSON.stringify(stateKey));
               getToken({ name, email });
             } }

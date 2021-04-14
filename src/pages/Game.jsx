@@ -60,9 +60,9 @@ class Game extends Component {
         player: {
           ...stateKey.player,
           assertions: stateKey.player.assertions + 1,
-          score: stateKey.player.score + (
-            baseScore + (timer * difficultyValues[difficulty]))
-          ,
+          score:
+            stateKey.player.score
+            + (baseScore + timer * difficultyValues[difficulty]),
         },
       };
 
@@ -92,7 +92,7 @@ class Game extends Component {
 
   retunAnswers(negative, answers) {
     return (
-      <div>
+      <div className="answers">
         {answers.sort((buttonA, buttonB) => {
           if (buttonA.key > buttonB.key) return 1;
           if (buttonA.key < buttonB.key) return negative;
@@ -120,6 +120,7 @@ class Game extends Component {
         data-testid="btn-next"
         type="button"
         onClick={ this.handleNextQuest }
+        id="next-button"
       >
         Próxima
       </button>
@@ -137,25 +138,41 @@ class Game extends Component {
     timer,
   }) {
     return (
-      <>
+      <div id="game-page">
         <header>
-          <img data-testid="header-profile-picture" src={ image } alt="player avatar" />
-          <span data-testid="header-player-name">{player.name}</span>
-          <span data-testid="header-score">{player.score}</span>
-          <div>
-            { !isButtonVisible ? <Timer /> : 'Confira sua resposta!'}
+          <div className="title">
+            <div className="avatar">
+              <img
+                data-testid="header-profile-picture"
+                src={ image }
+                alt="player avatar"
+              />
+              <p data-testid="header-player-name">{player.name}</p>
+            </div>
+            <div>
+              <Link to="/feedback">Feedback</Link>
+            </div>
           </div>
         </header>
-        <span>
-          <Link to="/feedback">feedback</Link>
-        </span>
-        <div>
-          <h2 data-testid="question-category">{questions[i].category}</h2>
-          <h3 data-testid="question-text">{questions[i].question}</h3>
+        <main className="main">
+          <section className="status">
+            <h3 data-testid="header-score">{`Pontuação: ${player.score}`}</h3>
+            <div className="timer">
+              {!isButtonVisible ? <Timer /> : 'Confira sua resposta!'}
+            </div>
+          </section>
+          <div>
+            <h2 data-testid="question-category">{questions[i].category}</h2>
+            <h3 data-testid="question-text">{questions[i].question}</h3>
+          </div>
+          {this.retunAnswers(negative, answers)}
+        </main>
+        <div className="button-container">
+          {timer <= 0 || isButtonVisible === true
+            ? this.returnNextButton()
+            : null}
         </div>
-        {this.retunAnswers(negative, answers)}
-        { timer <= 0 || isButtonVisible === true ? this.returnNextButton() : null}
-      </>
+      </div>
     );
   }
 
@@ -191,25 +208,21 @@ class Game extends Component {
       );
     });
 
-    return (
-      this.mountPage({
-        image,
-        player,
-        isButtonVisible,
-        questions,
-        i,
-        negative,
-        answers,
-        timer,
-      })
-    );
+    return this.mountPage({
+      image,
+      player,
+      isButtonVisible,
+      questions,
+      i,
+      negative,
+      answers,
+      timer,
+    });
   }
 
   render() {
     const { loading } = this.state;
-    return (
-      loading === true ? <span>loading...</span> : this.returnGame()
-    );
+    return loading === true ? <span>loading...</span> : this.returnGame();
   }
 }
 

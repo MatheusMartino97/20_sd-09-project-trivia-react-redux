@@ -8,7 +8,7 @@ class Timer extends Component {
     const { timer } = this.props;
 
     return (
-      <div>{ timer > 0 ? timer : 'Acabou o tempo!' }</div>
+      <div className="timer">{ timer > 0 ? timer : 'Acabou o tempo!' }</div>
     );
   }
 }

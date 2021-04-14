@@ -6,6 +6,17 @@
   border-radius: 5px;
 }
 
+/* #login-page a {
+  background-color: lightgray;
+  border-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid dimgray;
+  transition: 0.5s;
+  color: black;
+} */
+
 #login-page .login-form {
   display: flex;
   flex-direction: column;
@@ -21,8 +32,19 @@
 
 #login-page #play-button {
   width: 100%;
-  font-size: large;
-  padding: 5px;
+  font-size: larger;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid dimgray;
+  transition: 0.5s;
+  color: black;
+}
+
+#login-page #play-button:hover {
+  background-color: green;
+  color: white;
 }
 
 #login-page .title {
@@ -33,4 +55,92 @@
 
 #login-page .title img {
   height: 20px;
+}
+
+#login-page label {
+  margin-bottom: 20px;
+}
+
+
+#game-page {
+  width: 50vw;
+  display: inline-block;
+  padding: 20px;
+  /* background-color: rgba(105, 105, 105, 0.747); */
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.603);
+  color: white;
+}
+
+#game-page .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#game-page .status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#game-page .timer {
+  font-size: xx-large;
+}
+
+#game-page .answers {
+  display: flex;
+  flex-direction: column;
+}
+
+#game-page .answers * {
+  border-style: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid dimgray;
+  transition: 0.5s;
+}
+
+#game-page .answers *:hover {
+  border: 2px solid lightseagreen;
+}
+
+#game-page .button-container{
+  height: 39px;
+  display: flex;
+  justify-content: center;
+}
+
+#game-page #next-button {
+  background-color: lightgray;
+  border-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid dimgray;
+  transition: 0.5s;
+}
+
+#game-page #next-button:hover {
+  background-color: green;
+  color: white;
+}
+
+#game-page a {
+  text-decoration: none;
+  background-color: lightgray;
+  border-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid dimgray;
+  transition: 0.5s;
+  color: black;
+}
+
+#game-page a:hover {
+  background-color: green;
+  color: white;
 }
