@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/20_sd-09-project-trivia-react-redux/static/css/main.e11ec6ac.chunk.css",
-    "main.js": "/20_sd-09-project-trivia-react-redux/static/js/main.464e595b.chunk.js",
-    "main.js.map": "/20_sd-09-project-trivia-react-redux/static/js/main.464e595b.chunk.js.map",
+    "main.css": "/20_sd-09-project-trivia-react-redux/static/css/main.601e8611.chunk.css",
+    "main.js": "/20_sd-09-project-trivia-react-redux/static/js/main.4beee2a4.chunk.js",
+    "main.js.map": "/20_sd-09-project-trivia-react-redux/static/js/main.4beee2a4.chunk.js.map",
     "runtime-main.js": "/20_sd-09-project-trivia-react-redux/static/js/runtime-main.e79d4921.js",
     "runtime-main.js.map": "/20_sd-09-project-trivia-react-redux/static/js/runtime-main.e79d4921.js.map",
     "static/js/2.38f00c61.chunk.js": "/20_sd-09-project-trivia-react-redux/static/js/2.38f00c61.chunk.js",
     "static/js/2.38f00c61.chunk.js.map": "/20_sd-09-project-trivia-react-redux/static/js/2.38f00c61.chunk.js.map",
     "index.html": "/20_sd-09-project-trivia-react-redux/index.html",
-    "precache-manifest.2c26f11b7af28a2837fa3b67692eecb7.js": "/20_sd-09-project-trivia-react-redux/precache-manifest.2c26f11b7af28a2837fa3b67692eecb7.js",
+    "precache-manifest.b9b25c4ea0554bc7e28872c4200dd7b1.js": "/20_sd-09-project-trivia-react-redux/precache-manifest.b9b25c4ea0554bc7e28872c4200dd7b1.js",
     "service-worker.js": "/20_sd-09-project-trivia-react-redux/service-worker.js",
-    "static/css/main.e11ec6ac.chunk.css.map": "/20_sd-09-project-trivia-react-redux/static/css/main.e11ec6ac.chunk.css.map",
+    "static/css/main.601e8611.chunk.css.map": "/20_sd-09-project-trivia-react-redux/static/css/main.601e8611.chunk.css.map",
     "static/js/2.38f00c61.chunk.js.LICENSE.txt": "/20_sd-09-project-trivia-react-redux/static/js/2.38f00c61.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e79d4921.js",
     "static/js/2.38f00c61.chunk.js",
-    "static/css/main.e11ec6ac.chunk.css",
-    "static/js/main.464e595b.chunk.js"
+    "static/css/main.601e8611.chunk.css",
+    "static/js/main.4beee2a4.chunk.js"
   ]
 }
