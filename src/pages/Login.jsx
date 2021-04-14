@@ -26,29 +26,31 @@ class Login extends Component {
 
   returnForm(name, email, getToken) {
     return (
-      <form action="">
+      <form action="" className="login-form">
         <label htmlFor="input-player-name">
           Nome:
           <input
-            onChange={ this.handleChange }
+            onChange={this.handleChange}
             data-testid="input-player-name"
             type="text"
             name="name"
-            value={ name }
+            value={name}
             id="input-player-name"
           />
         </label>
+        <br/>
         <label htmlFor="input-gravatar-email">
           Email:
           <input
-            onChange={ this.handleChange }
+            onChange={this.handleChange}
             data-testid="input-gravatar-email"
             type="email"
             name="email"
-            value={ email }
+            value={email}
             id="input-gravatar-email"
           />
         </label>
+        <br/>
         <Link to="/game">
           <button
             onClick={ () => {
@@ -67,6 +69,7 @@ class Login extends Component {
             data-testid="btn-play"
             type="button"
             disabled={ !name || !email }
+            id="play-button"
           >
             Jogar
           </button>
@@ -80,13 +83,17 @@ class Login extends Component {
     const { getToken } = this.props;
 
     return (
-      <div>
+      <div id="login-page">
+        <div className="title">
+          <h1>Trivia</h1>
+          <Link to="/settings">
+            <img
+              src="https://i.ibb.co/kQHXQZt/Pngtree-settings-icon-mechanical-gear-cartoon-4000937.png"
+              alt=""
+            />
+          </Link>
+        </div>
         {this.returnForm(name, email, getToken)}
-        <Link to="/settings">
-          <button data-testid="btn-settings" type="button">
-            Configurações
-          </button>
-        </Link>
       </div>
     );
   }

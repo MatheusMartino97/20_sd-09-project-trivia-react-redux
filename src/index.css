@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://image.freepik.com/vetores-gratis/fundo-de-indicador-com-holofotes-brilhando_1048-4943.jpg');
+  background-size: cover;
 }
 
 .wrong-answer, .correct-answer {
