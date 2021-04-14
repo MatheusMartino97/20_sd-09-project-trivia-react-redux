@@ -158,7 +158,7 @@ class Game extends Component {
           <section className="status">
             <h3 data-testid="header-score">{`Pontuação: ${player.score}`}</h3>
             <div className="timer">
-              {!isButtonVisible ? <Timer /> : 'Confira sua resposta!'}
+              {!isButtonVisible ? <Timer /> : 'Confira a resposta!'}
             </div>
           </section>
           <div>

@@ -184,7 +184,7 @@
   margin-bottom: 20px;
 }
 
-#ranking-page ol>li {
+#ranking-page ol > li {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -235,4 +235,43 @@
 #ranking-page .title button:hover {
   background-color: green;
   color: white;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-attachment: fixed;
+  }
+  
+  #login-page,
+  #game-page,
+  #ranking-page,
+  #feedback-page {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #login-page .login-form {
+    height: 50vh;
+    justify-content: flex-end;
+  }
+
+  #game-page .title {
+    position: relative;
+  }
+
+  #game-page .title a {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #game-page .timer {
+    font-size: smaller;
+  }
+
+  #ranking-page {
+    top: 0;
+  }
 }
