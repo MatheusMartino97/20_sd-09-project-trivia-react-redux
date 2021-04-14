@@ -253,7 +253,7 @@
   }
 
   #login-page .login-form {
-    height: 50vh;
+    height: calc(45vh);
     justify-content: flex-end;
   }
 
