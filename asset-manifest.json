@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/20_sd-09-project-trivia-react-redux/static/css/main.601e8611.chunk.css",
-    "main.js": "/20_sd-09-project-trivia-react-redux/static/js/main.4beee2a4.chunk.js",
-    "main.js.map": "/20_sd-09-project-trivia-react-redux/static/js/main.4beee2a4.chunk.js.map",
+    "main.css": "/20_sd-09-project-trivia-react-redux/static/css/main.c174907b.chunk.css",
+    "main.js": "/20_sd-09-project-trivia-react-redux/static/js/main.2bc89565.chunk.js",
+    "main.js.map": "/20_sd-09-project-trivia-react-redux/static/js/main.2bc89565.chunk.js.map",
     "runtime-main.js": "/20_sd-09-project-trivia-react-redux/static/js/runtime-main.e79d4921.js",
     "runtime-main.js.map": "/20_sd-09-project-trivia-react-redux/static/js/runtime-main.e79d4921.js.map",
-    "static/js/2.38f00c61.chunk.js": "/20_sd-09-project-trivia-react-redux/static/js/2.38f00c61.chunk.js",
-    "static/js/2.38f00c61.chunk.js.map": "/20_sd-09-project-trivia-react-redux/static/js/2.38f00c61.chunk.js.map",
+    "static/js/2.45b1b700.chunk.js": "/20_sd-09-project-trivia-react-redux/static/js/2.45b1b700.chunk.js",
+    "static/js/2.45b1b700.chunk.js.map": "/20_sd-09-project-trivia-react-redux/static/js/2.45b1b700.chunk.js.map",
     "index.html": "/20_sd-09-project-trivia-react-redux/index.html",
-    "precache-manifest.b9b25c4ea0554bc7e28872c4200dd7b1.js": "/20_sd-09-project-trivia-react-redux/precache-manifest.b9b25c4ea0554bc7e28872c4200dd7b1.js",
+    "precache-manifest.df710ba05c21793f173e24f939a71c6a.js": "/20_sd-09-project-trivia-react-redux/precache-manifest.df710ba05c21793f173e24f939a71c6a.js",
     "service-worker.js": "/20_sd-09-project-trivia-react-redux/service-worker.js",
-    "static/css/main.601e8611.chunk.css.map": "/20_sd-09-project-trivia-react-redux/static/css/main.601e8611.chunk.css.map",
-    "static/js/2.38f00c61.chunk.js.LICENSE.txt": "/20_sd-09-project-trivia-react-redux/static/js/2.38f00c61.chunk.js.LICENSE.txt"
+    "static/css/main.c174907b.chunk.css.map": "/20_sd-09-project-trivia-react-redux/static/css/main.c174907b.chunk.css.map",
+    "static/js/2.45b1b700.chunk.js.LICENSE.txt": "/20_sd-09-project-trivia-react-redux/static/js/2.45b1b700.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e79d4921.js",
-    "static/js/2.38f00c61.chunk.js",
-    "static/css/main.601e8611.chunk.css",
-    "static/js/main.4beee2a4.chunk.js"
+    "static/js/2.45b1b700.chunk.js",
+    "static/css/main.c174907b.chunk.css",
+    "static/js/main.2bc89565.chunk.js"
   ]
 }
