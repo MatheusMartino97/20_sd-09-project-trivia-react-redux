@@ -2,7 +2,7 @@
   "name": "trivia-test",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://MatheusMartino97.github.io/20_sd-09-project-trivia-react-redux",
+  "homepage":"https://MatheusMartino97.github.io/20_sd-09-project-trivia-react-redux/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/user-event": "^7.1.2",
